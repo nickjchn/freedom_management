@@ -1,7 +1,12 @@
 <?PHP
 
 function byte_to_gb($size){
-	return round($size/(1024*1024*1024),5)."GB";
+	if($size < 0){
+		return "unlimited";
+	}else {
+		return round($size/(1024*1024*1024),5)."GB";
+	}
+}
 }
 
 
