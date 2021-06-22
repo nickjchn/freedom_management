@@ -1,4 +1,8 @@
 <?PHP
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 function byte_to_gb($size){
 	if($size < 0){
@@ -64,7 +68,7 @@ if ($result->num_rows > 0) {
 
 echo "</table>";
 echo "<p style='color:red'>User can access trojan.service only if his/her upload + download <= quota, download and upload will be set to ZERO on 1st of every month</p>";
-echo "</body></html>"
+echo "</body></html>";
 
 
 ?>
