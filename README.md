@@ -1,0 +1,2 @@
+# freedom_management
+查看基于mysql认证的trojan-gfw服务的用户已使用的数据量
